@@ -6,10 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Hello!';
 
-  //define isian dari class
-  //titleClass = 'red-title';
+  //define theme from class
+  warna_tema = 'tema_background';
 
   //define isian dari nilai warna
   //titleStyle = 'red';
@@ -20,9 +19,18 @@ export class AppComponent {
     'font-size' : '4em'
   }
 
+  formdata;
+  tema_bg;
+  tema_font;
+
+  constructor() { }
+  ngOnInit() {
+    this.tema_bg = "gumilar.panji@yahoo.co.id"; 
+ }
+
   onClickSubmit(data) {
-    alert("Entered Email id : " + data.emailid);
-    alert("Entered Email id : " + data.passwd);
+    alert("Entered Email id : " + data.tema_bg); 
+    alert("Entered Email id : " + data.tema_font);
     this.titleStyles = {
       'color': 'blue',
       'font-size' : '5em'

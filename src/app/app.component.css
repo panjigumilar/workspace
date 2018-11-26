@@ -1,6 +1,4 @@
-h1 {
-    text-decoration:underline;
-}
+/*sample*/
 .red-title {
   color:red;
 }
@@ -9,3 +7,7 @@ h1 {
     font-size:4em;
 }
 
+/*Tema Workspace*/
+.tema_background{
+    background-color:#f1f1f1;
+}
