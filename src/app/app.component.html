@@ -21,7 +21,19 @@
       <div class="modal-body">
           <div class="row">
               <div class="col-md-6">
-                <div id="cermin"></div>
+                <div id="cermin">
+                    {{todaydate}}
+                    {{data_validasi}}
+                    {{data_jenis_error}}
+                    get status from sevis {{get_status_service}}
+
+                    <h2>Employee Detail</h2>
+    <h3>{{errorMsg}}</h3>    
+    <ul *ngFor="let employee of employees">
+      <li>{{employee.id}}. {{employee.name}} - {{employee.age}}</li>
+    </ul>
+    
+                </div>
               </div>
               <div class="col-md-6">
                <!-- <h3 [class]="titleClass">{{title}}</h3> --> 
