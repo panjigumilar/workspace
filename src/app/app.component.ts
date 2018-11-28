@@ -46,19 +46,7 @@ export class AppComponent {
   ngOnInit() {
     //initial
     this.tema_bg = "gumilar.panji@yahoo.co.id";
-    this.myservice.tes()
-      .subscribe(data => this.employees = data,
-                error => this.errorMsg = error
-       );
-      this.myservice.testing()
-      .subscribe(data => this.employees = data,
-                error => this.errorMsg = error
-      );
-      
-      this.add('panji');
-      this.delete({id:1,name:'panji'});
-      this.search('panji');
-      this.update();             
+                 
   } 
 
   heroes: Hero[];

@@ -13,12 +13,15 @@ import { HttpClientModule,HttpHeaders } from '@angular/common/http';
 //local service
 import { LoginserviceService } from './loginservice.service';
 
+import { AppComponent } from './app.component';
+
 const routes: Routes = [];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes),HttpClientModule],
   exports: [RouterModule,FormsModule],
-  providers: [LoginserviceService]
+  providers: [LoginserviceService],
+  bootstrap: [AppComponent] 
 })
 
 export class AppRoutingModule { }

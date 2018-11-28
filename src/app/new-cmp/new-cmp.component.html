@@ -1,0 +1,7 @@
+Form admin GO-BLOG {{tes}} 
+<br>
+<input type="text" [(ngModel)]="data" /> <button (click) = "onClickSubmit()">ADD TO DO List</button>
+<p>Hasil : {{data}}</p>
+<ul>
+    <li *ngFor="let i of months">{{i}}</li>
+</ul>
