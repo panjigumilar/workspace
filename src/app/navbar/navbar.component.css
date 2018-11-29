@@ -1,0 +1,11 @@
+#cermin{
+    background-image: url('/assets/image/robot.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.grey_font{
+    color: #828282;
+}

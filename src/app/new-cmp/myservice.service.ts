@@ -22,7 +22,6 @@ export class MyserviceService {
     return this.http.post(this.link,user,httpOptions).subscribe(
     (res:Response) => {
       console.log(res.body['validasi']);
-      // you can assign the value to any variable here
     }, err => {
       throw err;
     });  

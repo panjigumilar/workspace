@@ -18,6 +18,8 @@ export class NewCmpComponent implements OnInit {
   tes;
   obj;
   employees;
+  showHeroes = false;
+  
 
   ngOnInit() {  
     this.data='panji';
@@ -29,5 +31,9 @@ export class NewCmpComponent implements OnInit {
     const newHero: User = {nama:this.nama} as User;
 
     this.tes = this.heroesService.insert(newHero);
+  }
+
+  show(){
+    this.showHeroes = !this.showHeroes;
   }
 }
